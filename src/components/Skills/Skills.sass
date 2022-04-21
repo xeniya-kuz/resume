@@ -1,0 +1,47 @@
+$yellow: #FFD27A
+$bgc: #100007
+$circle_size: calc(40px + 100 * (100vw / 1280))
+$white: #ffffff
+
+.skills
+    display: grid
+    grid-row-start: 3
+    height: 100%
+    &__wrap
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-template-rows: repeat(2, 1fr)
+        column-gap: 10%
+        row-gap: 10%
+        width: 70%
+        margin-left: 20%
+        grid-template-rows: 0.3fr 1fr
+        justify-content: center
+
+.skill
+    height: 70%
+    color: $bgc
+    &__first-row
+        grid-row-start: 1
+    &__second-row
+        grid-row-start: 2
+    &__first-column
+        grid-column-start: 1
+    &__second-column
+        grid-column-start: 2
+    &__third-column
+        grid-column-start: 3
+    &__fourth-column
+        grid-column-start: 4
+    &__circle
+        background-color: $yellow
+        border-radius: 360px
+        width: $circle_size
+        height: $circle_size
+        display: none
+        transition: 1s
+        justify-content: center
+        align-items: center
+
+.flex
+    display: flex

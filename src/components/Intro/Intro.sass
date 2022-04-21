@@ -1,0 +1,78 @@
+$height: 100vh
+$title-size: calc(24px + 26 * (100vw / 1280))
+$text-size: calc(10px + 10 * (100vw / 1280))
+$sp-size: calc(14px + 20 * (100vw / 1280))
+$bgc: #100007
+$yellow: #FFD27A
+$green: #2A9D8F
+$fw: 100
+$New-YorkerC: New-YorkerC, sans-serif
+$icon__height: 1.5em
+$white: #ffffff
+
+.intro
+    grid-row-start: 1
+    background-blend-mode: darken
+    background: url(../../assets/img/intro-background.jpg), rgba(16, 0, 7, 0.8)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position-x: center
+    height: $height - 1
+    position: relative
+    display: flex
+    &__me
+        background-blend-mode: lighten
+        background: url(../../assets/img/intro-photo.png)
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: left 5vw bottom
+        height: $height - 1
+        width: 100%
+        position: absolute
+    &__gradient
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5), $bgc 100%)
+        height: $height
+        display: flex
+        align-items: center
+        flex-direction: column
+        position: absolute
+        width: 100%
+    &__text
+        flex-grow: 1
+        width: fit-content
+    &__name-block
+        box-shadow: inset 0px -32px 23px rgba(0, 0, 0, 0.25)
+        font-family: $New-YorkerC
+        font-size: $title-size
+        font-weight: $fw
+        border-radius: 360px
+        padding: 2vh 2.5vw
+        background: linear-gradient(to right, $green, $yellow)
+        color: $bgc
+    &__speciality
+        margin-top: 2vh
+        font-size: $sp-size
+        font-weight: $fw
+        text-align: center
+    &__wrap
+        margin-top: 5vh
+        align-self: self-end
+        flex-grow: 1
+        margin-right: 3%
+
+.languages
+    display: grid
+    grid-template-columns: 1fr 1fr
+    color: $white
+    column-gap: 15%
+    text-transform: uppercase
+    font-size: $text-size
+    // justify-content: space-between
+    // width: 8%
+
+.language
+    text-decoration: underline
+    cursor: pointer
+    &__active
+        font-weight: bold
+        color: $green

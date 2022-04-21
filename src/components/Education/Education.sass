@@ -1,0 +1,87 @@
+$title-size: calc(14px + 36 * (100vw / 1280))
+$text-size: calc(10px + 10 * (100vw / 1280))
+$line-height: calc(10px + 30 * (100vw / 1920))
+$yellow: #FFD27A
+$green: #2A9D8F
+$fw: 100
+$New-YorkerC: New-YorkerC, sans-serif
+$pl: 10vw
+$thick: calc(1px + 9 * (100vw / 1920))
+$circle-size: 12vw
+
+.education
+    display: grid
+    grid-row-start: 5
+    row-gap: 7vw
+    // background: url(../../assets/img/education-with-numbers.png) no-repeat darkblue
+    // background-size: 60%
+    // background-position: left $pl center
+    // background-color: darkblue
+    &__number
+        font-family: $New-YorkerC
+        // Где 24px это наш минимальный шрифт, 16 – разница между шрифтом по макету 40 и минимальным шрифтом 24 (40-24 = 16). 100vw – это полная текущая ширина вьюпорта (экрана) 1280 – это ширина макета.
+        font-size: $title-size
+    &__text
+        text-align: center
+        font-size: $text-size
+        line-height: $line-height
+        &__left
+            grid-row-start: 2
+            grid-column-start: 1
+        &__right
+            grid-row-start: 2
+            grid-column-start: 2
+    &__speciality
+        font-family: $New-YorkerC
+        margin-bottom: 5%
+    &__wrap
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: repeat(2, 1fr)
+        row-gap: 5%
+        margin-left: 3%
+
+.absolute
+    position: absolute
+    width: 100%
+    top: -7%
+    left: -5%
+
+.relative
+    position: relative
+
+.circle-wrap
+    height: fit-content
+    flex-grow: 1
+
+.circle
+    border-radius: 360px
+    box-sizing: border-box
+    height: $circle-size
+    width: $circle-size
+    &__yellow
+        border: $thick solid $yellow
+        // right: 10%
+        // top: -10%
+        display: flex
+        align-items: center
+        justify-content: center
+    &__green
+        border: $thick solid $green
+    &__right
+        grid-row-start: 1
+        grid-column-start: 2
+    &__left
+        grid-row-start: 1
+        grid-column-start: 1
+
+.line
+    flex-grow: 0.5
+    height: $thick
+    align-self: center
+
+.bc-yellow
+    background-color: $yellow
+
+.bc-green
+    background-color: $green

@@ -1,0 +1,53 @@
+$title-size: calc(24px + 36 * (100vw / 1280))
+$motto-size: calc(14px + 15 * (100vw / 1280))
+$yellow: #FFD27A
+$green: #2A9D8F
+$fw: 100
+$New-YorkerC: New-YorkerC, sans-serif
+$bgc: #100007
+
+.about
+    display: grid
+    grid-row-start: 2
+    height: 100%
+    z-index: 1
+    &__text
+        text-align: justify
+    &__motto
+        font-family: $New-YorkerC
+        background: linear-gradient(to bottom, $green + 150 -62%, $green 71%)
+        border-radius: 80px
+        padding: 2vh 2.5vw
+        height: fit-content
+        color: $bgc
+        font-weight: $fw * 7
+        font-size: $motto-size
+        text-align: center
+        position: relative
+        //не получается сделать тень для треугольника
+        // box-shadow: inset 10px -20px 26px rgba(0, 0, 0, 0.65)
+        filter: drop-shadow(13px 30px 63px rgba(255, 210, 122, 0.3))
+        // треугольник
+        &:before
+            content: ""
+            width: 0
+            height: 0
+            right: 81%
+            top: 70%
+            position: absolute
+            border-top: 4em solid transparent
+            border-right: 2em solid $green
+            transform: rotate(-154.71deg)
+            z-index: -1
+
+.title
+    font-family: $New-YorkerC
+    font-size: $title-size
+    font-weight: $fw
+    color: $yellow
+
+.txt-yellow
+    color: $yellow
+
+.section-active
+    display: none

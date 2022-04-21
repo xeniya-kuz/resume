@@ -1,0 +1,55 @@
+$yellow: #FFD27A
+$green: #2A9D8F
+$menu-size: calc(10px + 40 * (100vw / 5000))
+$icon__height: 1.5em
+
+.menu
+    list-style: none
+    display: flex
+    flex-direction: column
+    grid-row-start: 1
+    font-size: $menu-size
+    &__wrap
+        height: 95%
+        display: grid
+        position: fixed
+        right: 2%
+        margin-top: $icon__height * 2
+        grid-template-rows: 2fr 1fr
+        z-index: 1
+    &__up
+        display: none
+        align-items: center
+        justify-content: end
+        grid-row-start: 2
+    &__item
+        display: flex
+        flex-direction: column
+        justify-content: center
+        flex-grow: 1
+        transition: 1s
+        &:hover
+            color: $green
+            transform: scale(1.2)
+            transform-origin: right
+        &__list
+            display: flex
+            align-self: flex-end
+        &__active
+            color: $yellow
+
+.up
+    height: $icon__height
+    &:hover
+        color: $green
+
+.semicircle
+    width: 0.5vw
+    height: 0.5vw
+    // border-radius: 100% 0 0 100% / 50% 0 0 50%
+    border-radius: 50%
+    background: #ffffff
+    align-self: center
+
+.txt-green
+    color: $green

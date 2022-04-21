@@ -1,0 +1,60 @@
+.about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  height: 100%;
+  z-index: 1;
+}
+
+.about__text {
+  text-align: justify;
+}
+
+.about__motto {
+  font-family: New-YorkerC, sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, from(#82f5e7), color-stop(71%, #2A9D8F));
+  background: linear-gradient(to bottom, #82f5e7, #2A9D8F 71%);
+  border-radius: 80px;
+  padding: 2vh 2.5vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: #100007;
+  font-weight: 700;
+  font-size: calc(14px + 15 * (100vw / 1280));
+  text-align: center;
+  position: relative;
+  -webkit-filter: drop-shadow(13px 30px 63px rgba(255, 210, 122, 0.3));
+          filter: drop-shadow(13px 30px 63px rgba(255, 210, 122, 0.3));
+}
+
+.about__motto:before {
+  content: "";
+  width: 0;
+  height: 0;
+  right: 81%;
+  top: 70%;
+  position: absolute;
+  border-top: 4em solid transparent;
+  border-right: 2em solid #2A9D8F;
+  -webkit-transform: rotate(-154.71deg);
+          transform: rotate(-154.71deg);
+  z-index: -1;
+}
+
+.title {
+  font-family: New-YorkerC, sans-serif;
+  font-size: calc(24px + 36 * (100vw / 1280));
+  font-weight: 100;
+  color: #FFD27A;
+}
+
+.txt-yellow {
+  color: #FFD27A;
+}
+
+.section-active {
+  display: none;
+}
+/*# sourceMappingURL=About.css.map */

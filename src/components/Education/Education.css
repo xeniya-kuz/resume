@@ -1,0 +1,126 @@
+.education {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 5;
+      grid-row-start: 5;
+  row-gap: 7vw;
+}
+
+.education__number {
+  font-family: New-YorkerC, sans-serif;
+  font-size: calc(14px + 36 * (100vw / 1280));
+}
+
+.education__text {
+  text-align: center;
+  font-size: calc(10px + 10 * (100vw / 1280));
+  line-height: calc(10px + 30 * (100vw / 1920));
+}
+
+.education__text__left {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+}
+
+.education__text__right {
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+
+.education__speciality {
+  font-family: New-YorkerC, sans-serif;
+  margin-bottom: 5%;
+}
+
+.education__wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  row-gap: 5%;
+  margin-left: 3%;
+}
+
+.absolute {
+  position: absolute;
+  width: 100%;
+  top: -7%;
+  left: -5%;
+}
+
+.relative {
+  position: relative;
+}
+
+.circle-wrap {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.circle {
+  border-radius: 360px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 12vw;
+  width: 12vw;
+}
+
+.circle__yellow {
+  border: calc(1px + 9 * (100vw / 1920)) solid #FFD27A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.circle__green {
+  border: calc(1px + 9 * (100vw / 1920)) solid #2A9D8F;
+}
+
+.circle__right {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+}
+
+.circle__left {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+}
+
+.line {
+  -webkit-box-flex: 0.5;
+      -ms-flex-positive: 0.5;
+          flex-grow: 0.5;
+  height: calc(1px + 9 * (100vw / 1920));
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.bc-yellow {
+  background-color: #FFD27A;
+}
+
+.bc-green {
+  background-color: #2A9D8F;
+}
+/*# sourceMappingURL=Education.css.map */
