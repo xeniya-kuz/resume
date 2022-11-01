@@ -1,84 +1,54 @@
 .skills {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-row: 3;
-      grid-row-start: 3;
+  grid-row-start: 3;
   height: 100%;
 }
-
 .skills__wrap {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
-  -webkit-column-gap: 10%;
-          column-gap: 10%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  -moz-column-gap: 10%;
+       column-gap: 10%;
   row-gap: 10%;
   width: 70%;
   margin-left: 20%;
-  -ms-grid-rows: 0.3fr 1fr;
-      grid-template-rows: 0.3fr 1fr;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  grid-template-rows: 0.3fr 1fr;
+  justify-content: center;
 }
 
 .skill {
   height: 70%;
   color: #100007;
 }
-
 .skill__first-row {
-  -ms-grid-row: 1;
-      grid-row-start: 1;
+  grid-row-start: 1;
 }
-
 .skill__second-row {
-  -ms-grid-row: 2;
-      grid-row-start: 2;
+  grid-row-start: 2;
 }
-
 .skill__first-column {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
+  grid-column-start: 1;
 }
-
 .skill__second-column {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
+  grid-column-start: 2;
 }
-
 .skill__third-column {
-  -ms-grid-column: 3;
-      grid-column-start: 3;
+  grid-column-start: 3;
 }
-
 .skill__fourth-column {
-  -ms-grid-column: 4;
-      grid-column-start: 4;
+  grid-column-start: 4;
 }
-
 .skill__circle {
   background-color: #FFD27A;
   border-radius: 360px;
-  width: calc(40px + 100 * (100vw / 1280));
-  height: calc(40px + 100 * (100vw / 1280));
+  width: calc(40px + 7.8125vw);
+  height: calc(40px + 7.8125vw);
   display: none;
-  -webkit-transition: 1s;
   transition: 1s;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-}
-/*# sourceMappingURL=Skills.css.map */
+}/*# sourceMappingURL=Skills.css.map */

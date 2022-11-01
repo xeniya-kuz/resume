@@ -35,27 +35,27 @@ const projects = [
             en: 'Vue calculator'
         },
         description: {
-            ru: 'Простой калькулятор на Вью, который выполняет операции сложения, вычитания, умножения, делания и возведения в степень. При делении на ноль выдает ошибку, позволяет вводить только цифры как с экранной клавиатуры, так и с обычной. Экранная клавиатура простая и скрываемая. Также реализованы юнит тесты для функционала калькулятора.',
+            ru: 'Простой калькулятор на Вью, который выполняет операции сложения, вычитания, умножения, деления и возведения в степень. При делении на ноль выдает ошибку, позволяет вводить только цифры как с экранной клавиатуры, так и с обычной. Экранная клавиатура простая и скрываемая. Также реализованы юнит тесты для функционала калькулятора.',
             en: 'Performs basic operations. When dividing by zero, it gives an error, it allows you to enter only numbers both from the on-screen keyboard and from the usual one. Unit tests are also implemented.'
         },
         img: images[1],
         link: 'https://xeniya-kuz.github.io/calculatorOnVue/',
         git: 'https://github.com/xeniya-kuz/calculatorOnVue',
     },
-    {
-        title:
-        {
-            ru: 'Мессенджер на Реакт',
-            en: 'React messenger'
-        },
-        description: {
-            ru: 'Мессенджер на Реакт с использованием redux, redux-thunk и redux-persist. Реализованы функции добавления и удаления чата, изменения его названия, добавления и удаления сообщения в каждый чат, ответ бота. Была работа с API, а именно отработка загрузки, ошибки и успеха.',
-            en: 'React messenger with redux. The functions of adding and deleting a chat, changing its name, adding and deleting a message to each chat, bot response are implemented. There was work with the API.'
-        },
-        img: images[2],
-        link: 'https://xeniya-kuz.github.io/react_msngr/',
-        git: 'https://github.com/xeniya-kuz/react_msngr',
-    },
+    // {
+    //     title:
+    //     {
+    //         ru: 'Мессенджер на Реакт',
+    //         en: 'React messenger'
+    //     },
+    //     description: {
+    //         ru: 'Мессенджер на Реакт с использованием redux, redux-thunk и redux-persist. Реализованы функции добавления и удаления чата, изменения его названия, добавления и удаления сообщения в каждый чат, ответ бота. Была работа с API, а именно отработка загрузки, ошибки и успеха.',
+    //         en: 'React messenger with redux. The functions of adding and deleting a chat, changing its name, adding and deleting a message to each chat, bot response are implemented. There was work with the API.'
+    //     },
+    //     img: images[2],
+    //     link: 'https://xeniya-kuz.github.io/react_msngr/',
+    //     git: 'https://github.com/xeniya-kuz/react_msngr',
+    // },
     {
         title:
         {
@@ -97,6 +97,48 @@ const projects = [
         img: images[5],
         link: 'https://xeniya-kuz.github.io/shopWithCart/',
         git: 'https://github.com/xeniya-kuz/shopWithCart',
+    },
+    {
+        title:
+        {
+            ru: 'Параллакс деревянного моря',
+            en: 'Sea parallax'
+        },
+        description: {
+            ru: 'Реализация параллакса. Из серии один раз увидеть, чем сто раз услышать.',
+            en: 'Parallax effect. Better to see that.'
+        },
+        img: images[6],
+        link: 'https://xeniya-kuz.github.io/SeaParallax/',
+        git: 'https://github.com/xeniya-kuz/SeaParallax',
+    },
+    {
+        title:
+        {
+            ru: 'Параллакс с горами',
+            en: 'Montain parallax'
+        },
+        description: {
+            ru: 'Реализация параллакса. Из серии один раз увидеть, чем сто раз услышать.',
+            en: 'Parallax effect. You should see that.'
+        },
+        img: images[7],
+        link: 'https://xeniya-kuz.github.io/montain-parallax/',
+        git: 'https://github.com/xeniya-kuz/montain-parallax',
+    },
+    {
+        title:
+        {
+            ru: 'Работа с API',
+            en: 'API'
+        },
+        description: {
+            ru: 'Использование Redux, react-router-dom, jquery ajax, GET/POST-запросы.',
+            en: 'I used Redux, react-router-dom, jquery ajax.'
+        },
+        img: images[8],
+        // link: '',
+        git: 'https://github.com/xeniya-kuz/softlex',
     },
 
 ]
@@ -214,7 +256,7 @@ export function Portfolio() {
                                 <a href={project.git} className='slider__git' target="_blank" rel="noreferrer">
                                     <FontAwesomeIcon icon="fa-brands fa-github" />
                                 </a>
-                                <a href={project.link} className='slider__button' target="_blank" rel="noreferrer">Посмотреть</a>
+                                {project.link && <a href={project.link} className='slider__button' target="_blank" rel="noreferrer">Посмотреть</a>}
                             </div>
                         )
                     })}
