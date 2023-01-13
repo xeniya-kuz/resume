@@ -1,0 +1,13 @@
+.experience {
+  display: grid;
+  grid-row-start: 4;
+  row-gap: 7vw;
+  height: 100vh;
+}
+.experience__wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 5%;
+  margin-left: 3%;
+}/*# sourceMappingURL=Experience.css.map */

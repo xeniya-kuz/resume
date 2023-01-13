@@ -7,89 +7,87 @@ $green: #2A9D8F
 $height: 100vh
 
 .portfolio
-    display: grid
-    grid-row-start: 4
-    position: relative
-    grid-template-rows: 1fr 6fr 0.5fr
-    height: $height
-    &__window
-        overflow: hidden
+	display: grid
+	grid-row-start: 5
+	position: relative
+	grid-template-rows: 1fr 6fr 0.5fr
+	height: $height
+	&__window
+		overflow: hidden
 
 .slider
-    &__item
-        display: grid
-        grid-template-rows: 1fr 4fr auto 1fr
-        grid-template-columns: 2fr 1fr
-        column-gap: 2%
-        margin-top: 3%
-        min-width: 100%
-        user-select: none
-    &__img
-        grid-row-start: 1
-        grid-row-end: 5
-        grid-column: 1
-        object-fit: cover
-        object-position: 50% 50%
-        width: 100%
-        align-self: center
+	&__item
+		display: grid
+		grid-template-rows: 1fr 4fr auto 1fr
+		grid-template-columns: 2fr 1fr
+		column-gap: 2%
+		margin-top: 3%
+		min-width: 100%
+		user-select: none
+	&__img
+		grid-row-start: 1
+		grid-row-end: 5
+		grid-column: 1
+		object-fit: cover
+		object-position: 50% 50%
+		width: 100%
+		align-self: center
 
-    &__title
-        color: $yellow
-        font-weight: 500
-        grid-column: 2
-        grid-row-start: 1
-        text-align: center
-        font-size: $title-size
-        align-self: end
-    &__description
-        grid-column: 2
-        grid-row-start: 2
-        font-size: $description-size
-        text-align: justify
-        align-self: center
-    &__git
-        grid-column: 2
-        grid-row-start: 3
-        color: $yellow
-        width: fit-content
-        transition: 0.3s
-        &:hover
-            color: $green
-    &__button
-        grid-column: 2
-        grid-row-start: 4
-        justify-self: center
-        align-self: end
-        background: linear-gradient(360deg, $yellow 31.72%, $white 138.59%)
-        box-shadow: inset 0px -9px 9px rgba(0, 0, 0, 0.4)
-        border-radius: 400px
-        padding: 4% 10%
-        font-size: $description-size
-        color: $bgc
-        text-decoration: none
-        &:hover
-            background: linear-gradient(to bottom, $green + 150 -72%, $green 71%)
-        &:active
-            background: linear-gradient(to top, $green -100%, $green 70.43%)
-            box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.8)
+	&__title
+		color: $yellow
+		font-weight: 500
+		grid-column: 2
+		grid-row-start: 1
+		text-align: center
+		font-size: $title-size
+		align-self: end
+	&__description
+		grid-column: 2
+		grid-row-start: 2
+		font-size: $description-size
+		text-align: justify
+		align-self: center
+	&__git
+		grid-column: 2
+		grid-row-start: 3
+		color: $yellow
+		width: fit-content
+		transition: 0.3s
+		&:hover
+				color: $green
+	&__button
+		grid-column: 2
+		grid-row-start: 4
+		justify-self: center
+		align-self: end
+		background: linear-gradient(360deg, $yellow 31.72%, $white 138.59%)
+		box-shadow: inset 0px -9px 9px rgba(0, 0, 0, 0.4)
+		border-radius: 400px
+		padding: 4% 10%
+		font-size: $description-size
+		color: $bgc
+		text-decoration: none
+		&:hover
+			background: linear-gradient(to bottom, $green + 150 -72%, $green 71%)
+		&:active
+			background: linear-gradient(to top, $green - 100%, $green 70.43%)
+			box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.8)
 
 .all-items-container
-    height: 100%
-    display: flex
-    transition: translate
-    transition-property: transform
-    transition-timing-function: ease-in-out
+	height: 100%
+	display: flex
+	transition: translate
+	transition-property: transform
+	transition-timing-function: ease-in-out
 
 .arrows
-    color: $yellow
-    align-self: end
-    display: flex
-    width: 100%
-    justify-content: space-around
+	color: $yellow
+	align-self: end
+	display: flex
+	width: 100%
+	justify-content: space-around
 
 .arrow
-    transition: 0.3s
-    &:hover
-        color: $green
-    &__left
-    &__right
+	transition: 0.3s
+	&:hover
+			color: $green

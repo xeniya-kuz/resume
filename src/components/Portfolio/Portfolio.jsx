@@ -125,11 +125,11 @@ const unreversedProjects = [
       en: 'API',
     },
     description: {
-      ru: 'Стек: react-redux, react-router-dom, ajax, GET/POST-запросы. Реализован с использованием хуков.',
-      en: 'I used react-redux, react-router-dom, ajax and react hooks ',
+      ru: 'Стек: react-redux, redux-thunk, react-router-dom, redux-persist, ajax, GET/POST-запросы. Реализован с использованием хуков.',
+      en: 'I used react-redux, react-router-dom, redux-persist, ajax and react hooks ',
     },
     img: images[8],
-    link: 'http://banana.fun/',
+    link: 'http://check-it-out.fun/',
     git: 'https://github.com/xeniya-kuz/softlex',
   },
   {
@@ -138,8 +138,9 @@ const unreversedProjects = [
       en: 'React movie app',
     },
     description: {
-      ru: 'Реализован на классах с помощью HOC. БД, которая была использована не работает в РФ, поэтому из России получится посмотреть только через VPN. БД не поддерживает регистрацию, поэтому для авторизации используются данные моего аккаунта.',
-      en: 'Used class components and HOCs. Database doesn"t support user registration, so there is data of my personal account to show you all features of the movie app',
+      ru: 'Реализован на классах с помощью HOC. БД, которая была использована не работает в РФ, поэтому из России получится посмотреть только через VPN. БД не поддерживает регистрацию, по этой причине для авторизации используются данные моего аккаунта.',
+      //redux-toolkit
+      en: "Used class components and HOCs. Database doesn't support user registration, so there is data of my personal account to show you all features of the movie app",
     },
     img: images[9],
     link: 'http://reactmovieapp.online/',

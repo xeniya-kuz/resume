@@ -1,11 +1,5 @@
-import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { animationIn, animationOut } from '../../store/actions';
-import {
-  getActiveSection,
-  getCurrentLanguage,
-  getInactiveSection,
-} from '../../store/selectors';
+import { useSelector } from 'react-redux';
+import { getActiveSection, getCurrentLanguage } from '../../store/selectors';
 import { LANGUAGES, SECTION_LINKS } from '../../utils/constants';
 import './About.css';
 
