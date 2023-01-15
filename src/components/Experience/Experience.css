@@ -5,9 +5,51 @@
   height: 100vh;
 }
 .experience__wrap {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  row-gap: 5%;
-  margin-left: 3%;
+  margin: 0 auto;
+  margin-top: -5vw;
+}
+.experience__cube {
+  width: 45vw;
+}
+.experience__line {
+  border-right: calc(1px + 0.46875vw) solid #FFD27A;
+  border-bottom: calc(1px + 0.46875vw) solid #FFD27A;
+  border-left: calc(1px + 0.46875vw) solid transparent;
+  height: 10vw;
+  width: 15vw;
+  position: relative;
+  display: flex;
+}
+.experience__line:first-child {
+  height: calc(1px + 0.46875vw);
+  border-right: none;
+}
+.experience__text {
+  text-align: center;
+  font-size: calc(13px + 0.78125vw);
+  line-height: calc(10px + 1.5625vw);
+  padding: 1vw;
+  word-wrap: break-word;
+}
+.experience__above {
+  font-family: New-YorkerC, sans-serif;
+  align-self: end;
+  width: 100%;
+}
+.experience__under {
+  position: absolute;
+  top: 10vw;
+  left: 0;
+  width: 100%;
+}
+.experience__under_no-transform {
+  top: 0;
+}
+
+.line_right_1 {
+  transform: translateX(calc(15vw - (1px + 0.46875vw)));
+}
+
+.line_right_2 {
+  transform: translateX(calc(30vw - (1px + 0.46875vw) * 2));
 }/*# sourceMappingURL=Experience.css.map */

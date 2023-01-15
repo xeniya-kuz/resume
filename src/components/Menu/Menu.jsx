@@ -31,13 +31,13 @@ export function Menu() {
       },
       link: SECTION_LINKS.skills,
     },
-    {
-      name: {
-        ru: 'Опыт',
-        en: 'Experience',
-      },
-      link: SECTION_LINKS.experience,
-    },
+    // {
+    //   name: {
+    //     ru: 'Опыт',
+    //     en: 'Experience',
+    //   },
+    //   link: SECTION_LINKS.experience,
+    // },
     {
       name: {
         ru: 'Портфолио',

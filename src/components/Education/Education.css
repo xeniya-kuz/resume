@@ -1,6 +1,6 @@
 .education {
   display: grid;
-  grid-row-start: 6;
+  grid-row-start: 5;
   row-gap: 7vw;
 }
 .education__number {

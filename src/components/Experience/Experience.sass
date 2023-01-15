@@ -1,4 +1,13 @@
 $height: 100vh
+$thick: calc(1px + 9 * (100vw / 1920))
+$yellow: #FFD27A
+$green: #2A9D8F
+$lineHeight: 10vw
+$lineWidth: 15vw
+$text-size: calc(13px + 10 * (100vw / 1280))
+$line-height: calc(10px + 30 * (100vw / 1920))
+$fw: 100
+$New-YorkerC: New-YorkerC, sans-serif
 	
 .experience
 	display: grid
@@ -6,8 +15,43 @@ $height: 100vh
 	row-gap: 7vw
 	height: $height
 	&__wrap
-		display: grid
-		grid-template-columns: repeat(2, 1fr)
-		grid-template-rows: repeat(2, 1fr)
-		row-gap: 5%
-		margin-left: 3%
+		margin: 0 auto
+		margin-top: -5vw
+	&__cube
+		width: $lineWidth * 3
+	&__line
+		border-right: $thick solid $yellow
+		border-bottom: $thick solid $yellow
+		border-left: $thick solid transparent
+		height: $lineHeight
+		width: $lineWidth
+		position: relative
+		display: flex
+		&:first-child
+			height:  $thick
+			border-right: none
+	&__text
+		text-align: center
+		font-size: $text-size
+		line-height: $line-height
+		padding: 1vw
+		word-wrap: break-word
+	&__above
+		font-family: $New-YorkerC
+		align-self: end
+		width: 100%
+	&__under
+		position: absolute
+		top: $lineHeight
+		left: 0
+		width: 100%
+		&_no-transform
+			top: 0
+
+
+.line_right_1
+	transform: translateX(calc($lineWidth - $thick))
+
+.line_right_2
+	transform: translateX(calc($lineWidth * 2 - $thick * 2))
+

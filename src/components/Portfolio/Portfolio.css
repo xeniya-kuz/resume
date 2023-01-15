@@ -1,6 +1,6 @@
 .portfolio {
   display: grid;
-  grid-row-start: 5;
+  grid-row-start: 4;
   position: relative;
   grid-template-rows: 1fr 6fr 0.5fr;
   height: 100vh;
