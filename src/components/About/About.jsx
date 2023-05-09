@@ -15,26 +15,32 @@ export function About() {
         </div>
         {currentLanguage === LANGUAGES[0] ? (
           <div className="about__text">
-            Живу в городе Санкт-Петербург. 28 лет. Закончила программу
-            переквалификации на GeekBrains. Имею опыт написания проектов на
-            JavaScript, Vue и React. Владею{' '}
+            Мне нравится искать решения сложных задач. Имею опыт разработки
+            проектов на JavaScript, Vue, React, Next (SSR) Владею{' '}
             <span className="txt-yellow"> английским </span> языком на уровне{' '}
             <span className="txt-yellow"> upper-intermediate (B2)</span>,{' '}
             <span className="txt-yellow"> японским </span> - на уровне{' '}
             <span className="txt-yellow"> beginner (A1)</span>. Владею{' '}
             <span className="txt-yellow"> мнемоническими техниками</span>.
+            <br />
+            <br />
+            Стек: JavaScript, TypeScript, React, Next, Sass/Scss, Redux,
+            Toolkit, Zustand, Bootstrap, Finder, Material UI, Ajax, Agile
           </div>
         ) : (
           <div className="about__text">
-            I live in Saint Petersburg. 28y.o. Finished GeekBrains retraining
-            program in october. I have experience writing projects in
-            JavaScript, Vue and React. I speak{' '}
+            I'm keen on finding ways to solve complex tasks. I have experience
+            developing projects in JavaScript, Vue, React and Next. I speak{' '}
             <span className="txt-yellow">English</span> at the level of{' '}
             <span className="txt-yellow">upper-intermediate (B2)</span>,{' '}
             <span className="txt-yellow">Japanese</span> - at the level of{' '}
             <span className="txt-yellow">beginner (A1)</span>. I am proficient
             in <span className="txt-yellow">mnemonics</span>. I know how to
             learn lots of information quickly.
+            <br />
+            <br />
+            Stack: JavaScript, TypeScript, React, Next, Sass/Scss, Redux,
+            Toolkit, Zustand, Bootstrap, Finder, Material UI, Ajax, Agile
           </div>
         )}
         {/* <div

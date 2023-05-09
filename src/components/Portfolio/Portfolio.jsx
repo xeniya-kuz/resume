@@ -278,7 +278,7 @@ export function Portfolio() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Посмотреть
+                    {currentLanguage === LANGUAGES[0] ? 'Посмотреть' : 'Look'}
                   </a>
                 )}
               </div>
