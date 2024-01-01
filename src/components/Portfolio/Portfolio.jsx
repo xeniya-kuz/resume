@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import { getCurrentLanguage } from '../../store/selectors';
 import { LANGUAGES, TRANSITION_DURATION } from '../../utils/constants';
 import './Portfolio.css';
+import PortfolioItem from './PortfolioItem';
 
 function importAll(r) {
   return r.keys().map(r);
@@ -16,16 +17,16 @@ const images = importAll(
 const unreversedProjects = [
   {
     title: {
-      ru: 'Адаптивная вёрстка',
-      en: 'Adaptive layout',
+      ru: 'Свадебный портал (все еще в разработке)',
+      en: 'Wedding organizer',
     },
     description: {
-      ru: 'Цель: отработка адаптивной вёрстки по готовому макету для пк, планшетов и смартфонов.',
-      en: 'The goal is practicing adaptive layout using ready-made model for pc, tablets and smartphones.',
+      ru: 'Портал для самостоятельной организации свадьбы от списка дел до рассадки гостей. Я была одним из 2х фронтед-разработчиков в команде. Портал еще находится в разработке. Основной стек: Typescript, NexJS, Redux Toolkit, Webpack, GitLab, Jira',
+      en: 'A platform for organizing your own wedding, from the to-do list to the seating arrangements for guests. I was one of 2 front-end developers on the team. Platform is still in development. Main stack: Typescript, NexJS, Redux Toolkit, Webpack, GitLab, Jira',
     },
-    img: images[0],
-    link: 'https://xeniya-kuz.github.io/adaptive-2/',
-    git: 'https://github.com/xeniya-kuz/adaptive-2',
+    img: images[10],
+    link: 'https://dev.eventforme.info',
+    //  git: 'https://github.com/xeniya-kuz/reactmovieapp',
   },
   // {
   //   title: {
@@ -54,45 +55,45 @@ const unreversedProjects = [
   //     link: 'https://xeniya-kuz.github.io/react_msngr/',
   //     git: 'https://github.com/xeniya-kuz/react_msngr',
   // },
-  {
-    title: {
-      ru: 'Мессенджер на Реакт с использованием firebase',
-      en: 'React messenger with firebase',
-    },
-    description: {
-      ru: 'Мессенджер на Реакт с использованием redux, redux-thunk, redux-persist и firebase. Реализованы функции добавления и удаления чата, изменения его названия; добавления, удаления и изменения сообщения; авторизация/регистрация. Все это с использованием firebase. Была работа с API, а именно отработка загрузки, ошибки и успеха.',
-      en: 'Implemented the functions of adding and deleting a chat, changing its name; adding, deleting and modifying a message; authorization/registration.',
-    },
-    img: images[3],
-    link: 'https://xeniya-kuz.github.io/react_firebase_msngr/',
-    git: 'https://github.com/xeniya-kuz/react_firebase_msngr',
-  },
-  {
-    title: {
-      ru: 'Приложение для подсчёта трат на Vue',
-      en: 'Vue expenses tracker',
-    },
-    description: {
-      ru: 'Приложение по тратам на Вью с использованием vuex. Можно добавлять, удалять и редактировать записи. Есть такой же вариант на vuetify.',
-      en: 'This project uses vuex. You can add, delete and edit entries',
-    },
-    img: images[4],
-    link: 'https://xeniya-kuz.github.io/vueExpenseTracker/',
-    git: 'https://github.com/xeniya-kuz/vueExpenseTracker',
-  },
-  {
-    title: {
-      ru: 'Вёрстка магазина',
-      en: 'Store layout',
-    },
-    description: {
-      ru: 'На главной странице работает добавление товара в корзину, его удаление, подсчет суммы и кол-ва товара. Функционал реализован на Вью.',
-      en: 'There is the cart on the main page, where implemented adding or deleting goods, calculating the amount and quantity.',
-    },
-    img: images[5],
-    link: 'https://xeniya-kuz.github.io/shopWithCart/',
-    git: 'https://github.com/xeniya-kuz/shopWithCart',
-  },
+  // {
+  //   title: {
+  //     ru: 'Мессенджер на Реакт с использованием firebase',
+  //     en: 'React messenger with firebase',
+  //   },
+  //   description: {
+  //     ru: 'Мессенджер на Реакт с использованием redux, redux-thunk, redux-persist и firebase. Реализованы функции добавления и удаления чата, изменения его названия; добавления, удаления и изменения сообщения; авторизация/регистрация. Все это с использованием firebase. Была работа с API, а именно отработка загрузки, ошибки и успеха.',
+  //     en: 'Implemented the functions of adding and deleting a chat, changing its name; adding, deleting and modifying a message; authorization/registration.',
+  //   },
+  //   img: images[3],
+  //   link: 'https://xeniya-kuz.github.io/react_firebase_msngr/',
+  //   git: 'https://github.com/xeniya-kuz/react_firebase_msngr',
+  // },
+  // {
+  //   title: {
+  //     ru: 'Приложение для подсчёта трат на Vue',
+  //     en: 'Vue expenses tracker',
+  //   },
+  //   description: {
+  //     ru: 'Приложение по тратам на Вью с использованием vuex. Можно добавлять, удалять и редактировать записи. Есть такой же вариант на vuetify.',
+  //     en: 'This project uses vuex. You can add, delete and edit entries',
+  //   },
+  //   img: images[4],
+  //   link: 'https://xeniya-kuz.github.io/vueExpenseTracker/',
+  //   git: 'https://github.com/xeniya-kuz/vueExpenseTracker',
+  // },
+  // {
+  //   title: {
+  //     ru: 'Вёрстка магазина',
+  //     en: 'Store layout',
+  //   },
+  //   description: {
+  //     ru: 'На главной странице работает добавление товара в корзину, его удаление, подсчет суммы и кол-ва товара. Функционал реализован на Вью.',
+  //     en: 'There is the cart on the main page, where implemented adding or deleting goods, calculating the amount and quantity.',
+  //   },
+  //   img: images[5],
+  //   link: 'https://xeniya-kuz.github.io/shopWithCart/',
+  //   git: 'https://github.com/xeniya-kuz/shopWithCart',
+  // },
   {
     title: {
       ru: 'Параллакс деревянного моря',
@@ -129,8 +130,21 @@ const unreversedProjects = [
       en: 'I used react-redux, react-router-dom, redux-persist, ajax and react hooks ',
     },
     img: images[8],
-    link: 'http://check-it-out.fun/',
+    link: 'http://test.naomi355.pserver.space',
     git: 'https://github.com/xeniya-kuz/softlex',
+  },
+  {
+    title: {
+      ru: 'Адаптивная вёрстка',
+      en: 'Adaptive layout',
+    },
+    description: {
+      ru: 'Цель: отработка адаптивной вёрстки по готовому макету для пк, планшетов и смартфонов.',
+      en: 'The goal is practicing adaptive layout using ready-made model for pc, tablets and smartphones.',
+    },
+    img: images[0],
+    link: 'https://xeniya-kuz.github.io/adaptive-2/',
+    git: 'https://github.com/xeniya-kuz/adaptive-2',
   },
   {
     title: {
@@ -143,7 +157,7 @@ const unreversedProjects = [
       en: "Used class components and HOCs. Database doesn't support user registration, so there is data of my personal account to show you all features of the movie app",
     },
     img: images[9],
-    link: 'http://reactmovieapp.online/',
+    link: 'http://naomi355.pserver.space',
     git: 'https://github.com/xeniya-kuz/reactmovieapp',
   },
 ];
@@ -243,47 +257,14 @@ export function Portfolio() {
             transform: `translateX(${offset}px)`,
           }}
         >
-          {items.map((project, indx) => {
-            return (
-              <div
-                key={indx}
-                className="slider__item"
-                style={{
-                  minWidth: `${width}px`,
-                }}
-              >
-                <img src={project.img} alt="Text" className="slider__img"></img>
-                <div className="slider__title">
-                  {currentLanguage === LANGUAGES[0]
-                    ? project.title.ru
-                    : project.title.en}
-                </div>
-                <div className="slider__description">
-                  {currentLanguage === LANGUAGES[0]
-                    ? project.description.ru
-                    : project.description.en}
-                </div>
-                <a
-                  href={project.git}
-                  className="slider__git"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <FontAwesomeIcon icon="fa-brands fa-github" />
-                </a>
-                {project.link && (
-                  <a
-                    href={project.link}
-                    className="slider__button"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    {currentLanguage === LANGUAGES[0] ? 'Посмотреть' : 'Look'}
-                  </a>
-                )}
-              </div>
-            );
-          })}
+          {items.map((project, indx) => (
+            <PortfolioItem
+              project={project}
+              key={indx}
+              width={width}
+              currentLanguage={currentLanguage}
+            />
+          ))}
         </div>
       </div>
       <div className="arrows">

@@ -1,11 +1,10 @@
 import { useSelector } from 'react-redux';
-import { getActiveSection, getCurrentLanguage } from '../../store/selectors';
-import { LANGUAGES, SECTION_LINKS } from '../../utils/constants';
+import { getCurrentLanguage } from '../../store/selectors';
+import { LANGUAGES } from '../../utils/constants';
 import './About.css';
 
 export function About() {
   const currentLanguage = useSelector(getCurrentLanguage);
-  const activeSection = useSelector(getActiveSection);
 
   return (
     <div name="about">
